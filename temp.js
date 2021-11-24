@@ -36,8 +36,7 @@ const months = [
 document.querySelector('.date h1').innerHTML
 =months[date.getMonth()];
 
-document.querySelector('.date p').innerHTML
-=date.toDateString();
+document.querySelector(".date p").innerHTML = new Date().toDateString();
 
 let days = "";
 
