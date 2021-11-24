@@ -79,10 +79,29 @@ document.querySelectorAll('.days div').forEach
 (day => {
     day.addEventListener("click", event =>{
          event.currentTarget.style.background = 'red';
-         localStorage.setItem(".days div",day.style.background="red");
+        console.log(event.currentTarget)
+        localStorage.setItem("days",event.currentTarget.style.background)
+         //  let dys = document.getElementsByClassName(".days div")[0]
+        //  localStorage.setItem("day",dys.style.background="red");      
     });
 });
 
-//let today = document.getElementsByClassName("today")[0]
-//localStorage.setItem("today",today.style.background="red");
+// document.querySelectorAll('.today').forEach
+// (day => {
+//     day.addEventListener("click", event =>{
+//          event.currentTarget.style.background = 'red';
+//          let today = document.getElementsByClassName("today")[0]
+//          localStorage.setItem("today",today.style.background="red");
+         
+//     });
+// });
+
+
+
+
+// let today = document.getElementsByClassName("today")[0]
+// localStorage.setItem("today",today.style.background="red");
+
+
+
 
