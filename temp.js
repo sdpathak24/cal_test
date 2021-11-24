@@ -36,11 +36,11 @@ const months = [
 document.querySelector('.date h1').innerHTML
 =months[date.getMonth()];
 
-//document.querySelector(".date p").innerHTML = new Date().toDateString();
+document.querySelector(".date p").innerHTML = new Date().toDateString();
 
-var enterGoal=window.prompt("Enter your goal");
+//var enterGoal=window.prompt("Enter your goal");
 
-  document.querySelector(".date p").innerHTML = enterGoal;
+ // document.querySelector(".date p").innerHTML = enterGoal;
 
 let days = "";
 
